@@ -26,3 +26,7 @@ mkdir Controllers && cd Controllers
 mkdir {"Interfaces","Impl"}
 
 cp ./../../ICrudController.$2  Interfaces
+
+cd ..
+ 
+tree
