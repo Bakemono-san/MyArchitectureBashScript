@@ -9,13 +9,15 @@ mkdir Datas
 cd Datas && mkdir {"Entites","Repository","Dtos","Types"}
 
 
+cp ./../../ICrudRepository.$2 Repository
+
 cd ..
 
 mkdir Services &&  cd Services
 
 mkdir {"Interfaces","Impl"}
 
-cp /home/bakemono/Documents/scripts/ICrudService.$2  Interfaces
+cp ./../../ICrudService.$2  Interfaces
 
 cd ..
 
@@ -23,4 +25,4 @@ mkdir Controllers && cd Controllers
 
 mkdir {"Interfaces","Impl"}
 
-cp /home/bakemono/Documents/scripts/ICrudController.$2  Interfaces
+cp ./../../ICrudController.$2  Interfaces
