@@ -1,6 +1,14 @@
 #!/bin/bash
 
-echo $1/"Datas"
+while IFS= read -r line; do
+    for (( i=0; i<${#line}; i++ )); do
+        echo -n "${line:$i:1}"
+        sleep 0.1
+    done
+    echo
+done < banner.txt
+
+echo $1/
 
 cd $1
 
@@ -28,5 +36,5 @@ mkdir {"Interfaces","Impl"}
 cp ./../../ICrudController.$2  Interfaces
 
 cd ..
- 
+
 tree
